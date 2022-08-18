@@ -29,6 +29,44 @@ header {
   padding: 0;
 }
 
+#weather {
+  left: 20px;
+  bottom: 10px;
+  position: absolute;
+}
+
+#weather span {
+  font-family: JetBrains Mono;
+  font-size: medium;
+}
+
+#weather img {
+  width: 20px;
+}
+
+#copyright {
+  left: 50%;
+  bottom: 25px;
+  position: absolute;
+  height: 10px;
+  width: 300px;
+  margin: 0 0 0 -150px;
+}
+
+#copyright p {
+  text-align: center;
+  font-family: Lato;
+  font-size: 8pt;
+  color: #BFBFBF;
+}
+
+@media ( max-width: 1000px) {
+  #book img {
+    width: 500px;
+    right: -200px;
+  }
+}
+
 @media ( max-width: 700px) {
   #book img {
     width: 400px;
