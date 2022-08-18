@@ -7,7 +7,7 @@
 
 header {
   right: 0;
-  position: absolute;
+  position: fixed;
   z-index: 2;
 }
 
@@ -17,11 +17,15 @@ header {
   margin-top: 5px;
 }
 
+#book {
+  max-width: 50%;
+  overflow: hidden;
+}
+
 #book img {
   right: 0;
   bottom: 0;
-  position: absolute;
-  width: 50%;
+  position: fixed;
   max-width: 600px;
   margin-top: 100px;
   margin-right: 0;
@@ -30,34 +34,43 @@ header {
 }
 
 #link {
-  bottom: 30px;
+  bottom: 25px;
   left: 50%;
-  width: 100px;
-  height: 15px;
-  margin: 0 0 0 -50px;
-  position: absolute;
+  width: 150px;
+  height: 20px;
+  margin: 0 0 0 -75px;
+  position: fixed;
   text-align: center;
 }
 
 #link a {
-  font-size: 10pt;
+  font-size: 11pt;
+  font-family: Lato;
+  color: #979797;
+  text-decoration: none;
+}
+
+#link span {
+  font-size: 11pt;
+  font-family: Lato;
+  color: #b5b5b5;
 }
 
 #greets {
   left: 20px;
   bottom: 15px;
-  position: absolute;
+  position: fixed;
 }
 
 #greets span {
   font-family: JetBrains Mono;
-  font-size: medium;
+  font-size: 11pt;
 }
 
 #copyright {
   left: 50%;
   bottom: 25px;
-  position: absolute;
+  position: fixed;
   height: 10px;
   width: 300px;
   margin: 0 0 0 -150px;
@@ -83,33 +96,75 @@ header {
     right: -200px;
   }
 
-  #greets {
-    bottom: 30px;
-  }
-
   #greets span {
     font-size: 10pt;
   }
 
   #copyright {
-    bottom: 15px;
+    bottom: 23px;
   }
 
   #copyright p {
-    font-size: 5pt;
+    font-size: 7pt;
   }
 }
 
 @media ( max-width: 500px) {
+  #topLogo img {
+    width: 80px;
+  }
+
   #book img {
     width: 400px;
     right: -270px;
   }
+
+  #greets {
+    bottom: 45px;
+  }
+
+  #greets span {
+    font-size: 9pt;
+  }
+
+  #link a, #link span {
+    font-size: 9pt;
+  }
 }
 
-@media ( max-height: 600px) {
+@media ( max-width: 350px) {
+  #book {
+    width: 30%;
+    right: -300px;
+  }
+
+  #greets {
+    visibility: hidden;
+  }
+
+  #link a, span {
+    font-size: 8pt;
+  }
+
+  #copyright p {
+    font-size: 6pt;
+  }
+}
+
+@media ( max-height: 900px) {
   #book img {
-    height: 400px;
+    height: 550px;
     width: auto;
+  }
+}
+
+@media ( max-height: 700px) {
+  #topLogo img {
+    width: 80px;
+  }
+
+  #book img {
+    height: 70%;
+    left: 80%;
   }
 }
