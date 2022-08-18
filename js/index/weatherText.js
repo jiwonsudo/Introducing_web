@@ -1,10 +1,9 @@
-require('dotenv').config();
 
 const weatherSpan = document.querySelector('#greets span:last-child');
 
 const greetingTexts = ["Have a happy day!", "Have a great day!", "Have a wonderful day!", "It's a nice day, isn't it?", "Good day!"];
 
-const API_KEY = process.env.WEATHER_API_KEY;
+const API_KEY = '49988f4abe0b40d186e35d5b3bbe9525';
 
 function onGeoOK(position) {
   const lat = position.coords.latitude;
@@ -18,7 +17,6 @@ fetch(url)
     const weatherID = String(data.weather[0].id);
 
     let weatherText = '';
-    
     if (weatherID.charAt(0) === '2') { // :thunderstorm
       weatherText = `You're in a thunderstorm! Be careful!`;
     } else if ((weatherID.charAt(0) === '5') || (weatherID.charAt(0) === '3')) { // :rain

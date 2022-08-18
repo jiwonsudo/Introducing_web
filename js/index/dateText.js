@@ -1,6 +1,6 @@
 
 const day = document.querySelector('#greets span:first-child');
-const date = document.querySelector('#greets span:nth-child(2)')
+const date = document.querySelector('#greets span:nth-child(2)');
 
 function getClock() {
   const date = new Date();
