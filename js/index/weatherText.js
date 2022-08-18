@@ -18,7 +18,7 @@ fetch(url)
     const weatherID = String(data.weather[0].id);
 
     let weatherText = '';
-
+    
     if (weatherID.charAt(0) === '2') { // :thunderstorm
       weatherText = `You're in a thunderstorm! Be careful!`;
     } else if ((weatherID.charAt(0) === '5') || (weatherID.charAt(0) === '3')) { // :rain
