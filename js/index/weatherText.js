@@ -38,13 +38,13 @@ try {
     weatherSpan.innerText = `${weatherText} ${icons[Math.floor(Math.random() * icons.length)]}`;
   }); 
 } catch (error) {
-  weatherSpan.innerText = 'Have a nice day!';
+  weatherSpan.innerText = `Have a nice day! ${icons[Math.floor(Math.random() * icons.length)]}`;
 }
 
 }
 
 function onGeoError() {
-  weatherSpan.innerText = 'Have a nice day!';
+  weatherSpan.innerText = `Have a nice day! ${icons[Math.floor(Math.random() * icons.length)]}`;
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOK, onGeoError);
