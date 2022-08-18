@@ -1,7 +1,7 @@
 
 const weatherSpan = document.querySelector('#greets span:last-child');
 
-const greetingTexts = ["Have a happy day!", "Have a great day!", "Have a wonderful day!", "It's a nice day, isn't it?", "Good day!"];
+const icons = ['❤️', '🔥', '✨', '🌷', '🍀', '🍔', '🏝', '💎'];
 
 const API_KEY = '49988f4abe0b40d186e35d5b3bbe9525';
 
@@ -10,8 +10,8 @@ function onGeoOK(position) {
   const lon = position.coords.longitude;
 
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
-
-fetch(url)
+try {
+  fetch(url)
   .then((res) => res.json())
   .then((data) => {
     const weatherID = String(data.weather[0].id);
@@ -35,13 +35,16 @@ fetch(url)
       weatherText = `You're in a cloudy place!`;
     } else { weatherText = `${greetingTexts[Math.floor(Math.random() * greetingTexts.length)]} ❤️`; }
 
-    weatherSpan.innerText = `${weatherText} ❤️`;
-  })
+    weatherSpan.innerText = `${weatherText} ${icons[Math.floor(Math.random() * icons.length)]}`;
+  }); 
+} catch (error) {
+  weatherSpan.innerText = 'Have a nice day!';
+}
 
 }
 
 function onGeoError() {
-  weatherSpan.innerText = `${greetingTexts[Math.floor(Math.random() * greetingTexts.length)]}`;
+  weatherSpan.innerText = 'Have a nice day!';
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOK, onGeoError);
