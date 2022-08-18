@@ -1,9 +1,10 @@
+require('dotenv').config();
 
 const weatherSpan = document.querySelector('#greets span:last-child');
 
 const greetingTexts = ["Have a happy day!", "Have a great day!", "Have a wonderful day!", "It's a nice day, isn't it?", "Good day!"];
 
-const API_KEY = '49988f4abe0b40d186e35d5b3bbe9525'
+const API_KEY = process.env.WEATHER_API_KEY;
 
 function onGeoOK(position) {
   const lat = position.coords.latitude;

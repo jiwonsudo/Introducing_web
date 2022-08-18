@@ -83,17 +83,16 @@ header {
   color: #BFBFBF;
 }
 
-@media ( max-width: 1000px) {
+@media ( max-width: 1200px) {
   #book img {
-    width: 500px;
-    right: -200px;
+    width: 450px;
+    right: -150px;
   }
 }
 
 @media ( max-width: 700px) {
   #book img {
     width: 400px;
-    right: -200px;
   }
 
   #greets span {
@@ -115,8 +114,8 @@ header {
   }
 
   #book img {
-    width: 400px;
-    right: -270px;
+    width: 350px;
+    right: -220px;
   }
 
   #greets {
@@ -132,10 +131,10 @@ header {
   }
 }
 
-@media ( max-width: 350px) {
-  #book {
-    width: 30%;
-    right: -300px;
+@media ( max-width: 350px ) {
+  #book img {
+    width: 300px;
+    right: -205px;
   }
 
   #greets {
@@ -151,20 +150,13 @@ header {
   }
 }
 
-@media ( max-height: 900px) {
-  #book img {
-    height: 550px;
-    width: auto;
-  }
-}
-
-@media ( max-height: 700px) {
+@media ( max-height: 700px ) {
   #topLogo img {
     width: 80px;
   }
 
   #book img {
-    height: 70%;
-    left: 80%;
+    width: 350px;
+    right: -130px;
   }
 }
