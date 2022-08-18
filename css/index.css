@@ -29,19 +29,29 @@ header {
   padding: 0;
 }
 
-#weather {
+#link {
+  bottom: 30px;
+  left: 50%;
+  width: 100px;
+  height: 15px;
+  margin: 0 0 0 -50px;
+  position: absolute;
+  text-align: center;
+}
+
+#link a {
+  font-size: 10pt;
+}
+
+#greets {
   left: 20px;
-  bottom: 10px;
+  bottom: 15px;
   position: absolute;
 }
 
-#weather span {
+#greets span {
   font-family: JetBrains Mono;
   font-size: medium;
-}
-
-#weather img {
-  width: 20px;
 }
 
 #copyright {
@@ -72,6 +82,22 @@ header {
     width: 400px;
     right: -200px;
   }
+
+  #greets {
+    bottom: 30px;
+  }
+
+  #greets span {
+    font-size: 10pt;
+  }
+
+  #copyright {
+    bottom: 15px;
+  }
+
+  #copyright p {
+    font-size: 5pt;
+  }
 }
 
 @media ( max-width: 500px) {
@@ -85,6 +111,5 @@ header {
   #book img {
     height: 400px;
     width: auto;
-    /* right: -200px; */
   }
 }

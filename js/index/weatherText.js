@@ -1,8 +1,7 @@
 
-const weatherSpan = document.querySelector('#weather span:last-child');
+const weatherSpan = document.querySelector('#greets span:last-child');
 
-const greetingTexts = ["Have a happy day!", "Have a great day!", "Have a wonderful day!", "It's a nice day, isn't it?",
- "Even if I don't look, I know you're pretty.", "Good day!", "Earth is a wonderful place. isn't it?"];
+const greetingTexts = ["Have a happy day!", "Have a great day!", "Have a wonderful day!", "It's a nice day, isn't it?", "Good day!"];
 
 const API_KEY = '49988f4abe0b40d186e35d5b3bbe9525'
 
@@ -12,7 +11,7 @@ function onGeoOK(position) {
 
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
 
-  fetch(url)
+fetch(url)
   .then((res) => res.json())
   .then((data) => {
     const weatherID = String(data.weather[0].id);
