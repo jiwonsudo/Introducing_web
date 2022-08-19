@@ -40,6 +40,14 @@ header {
   border-radius: 8%;
   border-style: solid;
   position: fixed;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+#bookmarks a:hover {
+  width: 110px;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
 }
 
 #bookmarks a:nth-child(1) {
@@ -78,6 +86,11 @@ header {
   font-family: Lato;
   color: #979797;
   text-decoration: none;
+}
+
+#link a:hover {
+  color: #E75027;
+  transition-duration: .7s;
 }
 
 #link span {
@@ -124,6 +137,10 @@ header {
     height: 30px;
     border-width: 1px;
   }
+
+  #bookmarks a:hover {
+    width: 80px;
+  }
   
   #bookmarks a:nth-child(1) {
     right: 211px;
@@ -151,6 +168,10 @@ header {
     width: 50px;
     height: 23px;
     border-width: 1px;
+  }
+
+  #bookmarks a:hover {
+    width: 70px;
   }
   
   #bookmarks a:nth-child(1) {
@@ -196,6 +217,10 @@ header {
     height: 23px;
     border-width: 1px;
   }
+
+  #bookmarks a:hover {
+    width: 70px;
+  }
   
   #bookmarks a:nth-child(1) {
     right: 61px;
@@ -240,6 +265,10 @@ header {
     height: 18px;
     border-width: 1px;
   }
+
+  #bookmarks a:hover {
+    width: 55px;
+  }
   
   #bookmarks a:nth-child(1) {
     right: 35px;
@@ -272,7 +301,7 @@ header {
 
   #book img {
     width: 350px;
-    right: -130px;
+    right: -220px;
   }
 
   #bookmarks a {
@@ -282,17 +311,17 @@ header {
   }
   
   #bookmarks a:nth-child(1) {
-    right: 151px;
+    right: 61px;
     bottom: 360px;
   }
   
   #bookmarks a:nth-child(2) {
-    right: 146px;
+    right: 56px;
     bottom: 330px;
   }
   
   #bookmarks a:nth-child(3) {
-    right: 140px;
+    right: 50px;
     bottom: 300px;
   }
 }
