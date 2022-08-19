@@ -46,21 +46,21 @@ header {
   background-color: #F7DF1E;
   border-color: #e1ca1b;
   right: 477px;
-  top: 350px;
+  bottom: 610px;
 }
 
 #bookmarks a:nth-child(2) {
   background-color: #F05138;
   border-color: #c7422e;
   right: 469px;
-  top: 400px;
+  bottom: 560px;
 }
 
 #bookmarks a:nth-child(3) {
   background-color: #3776AB;
   border-color: #2b5d86;
   right: 460px;
-  top: 450px;
+  bottom: 510px;
 }
 
 #link {
@@ -118,12 +118,54 @@ header {
     width: 450px;
     right: -150px;
   }
+
+  #bookmarks a {
+    width: 60px;
+    height: 30px;
+    border-width: 1px;
+  }
+  
+  #bookmarks a:nth-child(1) {
+    right: 211px;
+    bottom: 465px;
+  }
+  
+  #bookmarks a:nth-child(2) {
+    right: 205px;
+    bottom: 425px;
+  }
+  
+  #bookmarks a:nth-child(3) {
+    right: 198px;
+    bottom: 385px;
+  }
 }
 
 @media ( max-width: 700px) {
   #book img {
     width: 400px;
     right: -220px;
+  }
+
+  #bookmarks a {
+    width: 50px;
+    height: 23px;
+    border-width: 1px;
+  }
+  
+  #bookmarks a:nth-child(1) {
+    right: 100px;
+    bottom: 415px;
+  }
+  
+  #bookmarks a:nth-child(2) {
+    right: 95px;
+    bottom: 382px;
+  }
+  
+  #bookmarks a:nth-child(3) {
+    right: 90px;
+    bottom: 349px;
   }
 
   #greets span {
@@ -149,6 +191,27 @@ header {
     right: -220px;
   }
 
+  #bookmarks a {
+    width: 50px;
+    height: 23px;
+    border-width: 1px;
+  }
+  
+  #bookmarks a:nth-child(1) {
+    right: 61px;
+    bottom: 360px;
+  }
+  
+  #bookmarks a:nth-child(2) {
+    right: 56px;
+    bottom: 330px;
+  }
+  
+  #bookmarks a:nth-child(3) {
+    right: 51px;
+    bottom: 300px;
+  }
+
   #greets {
     bottom: 50px;
   }
@@ -172,6 +235,27 @@ header {
     visibility: hidden;
   }
 
+  #bookmarks a {
+    width: 40px;
+    height: 18px;
+    border-width: 1px;
+  }
+  
+  #bookmarks a:nth-child(1) {
+    right: 35px;
+    bottom: 315px;
+  }
+  
+  #bookmarks a:nth-child(2) {
+    right: 30px;
+    bottom: 287px;
+  }
+  
+  #bookmarks a:nth-child(3) {
+    right: 25px;
+    bottom: 259px;
+  }
+
   #link a, span {
     font-size: 8pt;
   }
@@ -190,11 +274,62 @@ header {
     width: 350px;
     right: -130px;
   }
+
+  #bookmarks a {
+    width: 50px;
+    height: 23px;
+    border-width: 1px;
+  }
+  
+  #bookmarks a:nth-child(1) {
+    right: 151px;
+    bottom: 360px;
+  }
+  
+  #bookmarks a:nth-child(2) {
+    right: 146px;
+    bottom: 330px;
+  }
+  
+  #bookmarks a:nth-child(3) {
+    right: 140px;
+    bottom: 300px;
+  }
 }
 
 @media ( max-height: 400px ) {
   #book img {
-    width: 200px;
-    right: -120px;
+    width: 230px;
+    right: -130px;
+    bottom: -20px;
+  }
+
+  #bookmarks a {
+    width: 40px;
+    height: 18px;
+    border-width: 1px;
+  }
+  
+  #bookmarks a:nth-child(1) {
+    right: 54px;
+    bottom: 210px;
+  }
+  
+  #bookmarks a:nth-child(2) {
+    right: 51px;
+    bottom: 185px;
+  }
+  
+  #bookmarks a:nth-child(3) {
+    right: 48px;
+    bottom: 160px;
+  }
+
+  #greets span {
+    font-size: 8pt;
+  }
+
+  #link a, #link span {
+    font-size: 9pt;
   }
 }
