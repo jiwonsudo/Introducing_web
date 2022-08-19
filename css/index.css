@@ -33,6 +33,36 @@ header {
   padding: 0;
 }
 
+#bookmarks a {
+  width: 80px;
+  height: 40px;
+  border-width: 1px;
+  border-radius: 8%;
+  border-style: solid;
+  position: fixed;
+}
+
+#bookmarks a:nth-child(1) {
+  background-color: #F7DF1E;
+  border-color: #e1ca1b;
+  right: 477px;
+  top: 350px;
+}
+
+#bookmarks a:nth-child(2) {
+  background-color: #F05138;
+  border-color: #c7422e;
+  right: 469px;
+  top: 400px;
+}
+
+#bookmarks a:nth-child(3) {
+  background-color: #3776AB;
+  border-color: #2b5d86;
+  right: 460px;
+  top: 450px;
+}
+
 #link {
   bottom: 25px;
   left: 50%;
