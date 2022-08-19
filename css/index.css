@@ -93,6 +93,7 @@ header {
 @media ( max-width: 700px) {
   #book img {
     width: 400px;
+    right: -220px;
   }
 
   #greets span {
