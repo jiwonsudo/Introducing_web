@@ -109,7 +109,7 @@ header {
   }
 }
 
-@media ( max-width: 500px) {
+@media ( max-width: 550px) {
   #topLogo img {
     width: 80px;
   }
@@ -120,11 +120,11 @@ header {
   }
 
   #greets {
-    bottom: 45px;
+    bottom: 50px;
   }
 
   #greets span {
-    font-size: 9pt;
+    font-size: 8pt;
   }
 
   #link a, #link span {
@@ -132,7 +132,7 @@ header {
   }
 }
 
-@media ( max-width: 350px ) {
+@media ( max-width: 380px ) {
   #book img {
     width: 300px;
     right: -205px;
@@ -159,5 +159,12 @@ header {
   #book img {
     width: 350px;
     right: -130px;
+  }
+}
+
+@media ( max-height: 400px ) {
+  #book img {
+    width: 200px;
+    right: -120px;
   }
 }
