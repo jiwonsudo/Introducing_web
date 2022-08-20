@@ -382,6 +382,24 @@ header {
     bottom: 300px;
   }
 
+  .bookmark1 {
+    right: 190px; 
+    bottom: 420px; 
+    font-size: small;
+  }
+  
+  .bookmark2 {
+    right: 185px;
+    bottom: 387px;
+    font-size: small;
+  }
+  
+  .bookmark3 {
+    right: 180px;
+    bottom: 354px;
+    font-size: small;
+  }
+
   #greets {
     bottom: 50px;
   }
