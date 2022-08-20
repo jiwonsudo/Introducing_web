@@ -328,8 +328,8 @@ header {
   }
 
   #desc1 {
-    right: 190px;
-    bottom: 420px;
+    right: 190px; 
+    bottom: 420px; 
     font-size: small;
   }
   
@@ -674,7 +674,7 @@ header {
 
 @media (hover: none) and (pointer: coarse) {
 
-  #bookmarks span {
+  .bookmarks {
     visibility: hidden;
   }
 

@@ -8,18 +8,23 @@ const BOOKMARK_ABOUT_CLASS = 'bookmark1';
 const BOOKMARK_WORKS_CLASS = 'bookmark2';
 const BOOKMARK_WORK_BLOGS_CLASS = 'bookmark3';
 
+const BOOKMARK_CLASS = 'bookmarks';
+
 function createText(event) {
   describe = document.createElement('span');
   describeID = event.target.id;
 
   if (describeID === 'about') {
     describe.classList.add(BOOKMARK_ABOUT_CLASS);
+    describe.classList.add(BOOKMARK_CLASS);
     describe.innerText = 'About Me!';
   } else if (describeID === 'works') {
     describe.classList.add(BOOKMARK_WORKS_CLASS);
+    describe.classList.add(BOOKMARK_CLASS);
     describe.innerText = 'My Works';
   } else if (describeID === 'work_blogs') {
     describe.classList.add(BOOKMARK_WORK_BLOGS_CLASS);
+    describe.classList.add(BOOKMARK_CLASS);
     describe.innerText = 'Work Blogs';
   }
 
