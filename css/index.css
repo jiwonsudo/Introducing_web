@@ -40,13 +40,13 @@ header {
   border-radius: 8%;
   border-style: solid;
   position: fixed;
-  transition-duration: .2s;
+  transition-duration: .12s;
   transition-timing-function: ease-in-out;
 }
 
 #bookmarks a:hover {
   width: 110px;
-  transition-duration: .2s;
+  transition-duration: .12s;
   transition-timing-function: ease-in-out;
 }
 
@@ -75,17 +75,19 @@ header {
   bottom: 25px;
   left: 50%;
   width: 150px;
-  height: 20px;
+  height: 22px;
   margin: 0 0 0 -75px;
   position: fixed;
   text-align: center;
 }
 
 #link a {
+  height: 22px;
   font-size: 11pt;
   font-family: Lato;
   color: #979797;
   text-decoration: none;
+  font-weight: 500;
 }
 
 #link a:hover {
@@ -126,6 +128,55 @@ header {
   color: #BFBFBF;
 }
 
+/*------------------------------ addable classes ------------------------------*/
+
+.hidden {
+  visibility: hidden;
+}
+
+.bookmark1 {
+  position: fixed;
+
+  right: 607px; /* #bookmark a 1th's right + 130px */
+  bottom: 622px; /* #bookmark a 1th's bottom + 12px */
+
+  font-family: Lato;
+  font-weight: 300;
+  font-size: larger;
+}
+
+.bookmark2 {
+  position: fixed;
+
+  right: 599px;
+  bottom: 572px;
+
+  font-family: Lato;
+  font-weight: 300;
+  font-size: larger;
+}
+
+.bookmark3 {
+  position: fixed;
+
+  right: 590px;
+  bottom: 522px;
+
+  font-family: Lato;
+  font-weight: 300;
+  font-size: larger;
+}
+
+.textBlue {
+  color: rgb(44, 138, 244);
+}
+
+.textRed {
+  color: rgb(230, 68, 28);
+}
+
+/*------------------------------ medias ------------------------------*/
+
 @media ( max-width: 1200px) {
   #book img {
     width: 450px;
@@ -155,6 +206,24 @@ header {
   #bookmarks a:nth-child(3) {
     right: 198px;
     bottom: 385px;
+  }
+
+  .bookmark1 {
+    right: 311px; 
+    bottom: 472px; 
+    font-size: medium;
+  }
+  
+  .bookmark2 {
+    right: 305px;
+    bottom: 432px;
+    font-size: medium;
+  }
+  
+  .bookmark3 {
+    right: 298px;
+    bottom: 392px;
+    font-size: medium;
   }
 }
 
@@ -187,6 +256,24 @@ header {
   #bookmarks a:nth-child(3) {
     right: 90px;
     bottom: 349px;
+  }
+
+  .bookmark1 {
+    right: 190px; 
+    bottom: 420px; 
+    font-size: small;
+  }
+  
+  .bookmark2 {
+    right: 185px;
+    bottom: 387px;
+    font-size: small;
+  }
+  
+  .bookmark3 {
+    right: 180px;
+    bottom: 354px;
+    font-size: small;
   }
 
   #greets span {
@@ -307,7 +394,11 @@ header {
   #bookmarks a {
     width: 50px;
     height: 23px;
-    border-width: 1px;
+  }
+
+  #bookmarks a:hover {
+    width: 65px;
+    height: 23px;
   }
   
   #bookmarks a:nth-child(1) {
@@ -337,6 +428,11 @@ header {
     width: 40px;
     height: 18px;
     border-width: 1px;
+  }
+
+  #bookmarks a:hover {
+    width: 50px;
+    height: 18px;
   }
   
   #bookmarks a:nth-child(1) {

@@ -1,15 +1,17 @@
 
-const dayDate = document.querySelector('#greets span:first-child');
+const day = document.querySelector('#greets span:first-child');
+const date = document.querySelector('#greets span:nth-child(2)');
 
 function getDayDate() {
-  const date = new Date();
-  const dateToday = String(date.getDate()).padStart(2, '0');
-  const dayToday = String(date.getDay());
+  const dateNow = new Date();
+  const dateToday = String(dateNow.getDate()).padStart(2, '0');
+  const dayToday = String(dateNow.getDay());
   
   let dayText = '';
 
   if (dayToday === '0') {
     dayText = 'Sun';
+    day.classList.add('textRed');
   } else if (dayToday === '1') {
     dayText = 'Mon';
   } else if (dayToday === '2') {
@@ -22,12 +24,11 @@ function getDayDate() {
     dayText = 'Fri';
   } else if (dayToday === '6') {
     dayText = 'Sat';
+    day.classList.add('textBlue');
   }
 
-  console.log(dateToday);
-
-  dayDate.innerText = `${dayText} ${dateToday}`;
-
+  day.innerText = `${dayText} `;
+  date.innerText = `${dateToday}`;
 }
 
 getDayDate();
