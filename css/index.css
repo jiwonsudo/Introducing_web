@@ -71,23 +71,74 @@ header {
   bottom: 510px;
 }
 
+.bookmark1 {
+  position: fixed;
+
+  right: 607px; /* #bookmark a 1th's right + 130px */
+  bottom: 622px; /* #bookmark a 1th's bottom + 12px */
+
+  font-family: Lato;
+  font-weight: 300;
+  font-size: larger;
+}
+
+.bookmark2 {
+  position: fixed;
+
+  right: 599px;
+  bottom: 572px;
+
+  font-family: Lato;
+  font-weight: 300;
+  font-size: larger;
+}
+
+.bookmark3 {
+  position: fixed;
+
+  right: 590px;
+  bottom: 522px;
+
+  font-family: Lato;
+  font-weight: 300;
+  font-size: larger;
+}
+
 .mobiledesc {
   visibility: hidden;
 }
 
 #desc1 {
-  right: 477px;
-  bottom: 610px;
+  position: fixed;
+
+  right: 607px; /* #bookmark a 1th's right + 130px */
+  bottom: 622px; /* #bookmark a 1th's bottom + 12px */
+
+  font-family: Lato;
+  font-weight: 300;
+  font-size: larger;
 }
 
 #desc2 {
-  right: 469px;
-  bottom: 560px;
+  position: fixed;
+
+  right: 599px;
+  bottom: 572px;
+
+  font-family: Lato;
+  font-weight: 300;
+  font-size: larger;
 }
 
 #desc3 {
-  right: 460px;
-  bottom: 510px;
+  position: fixed;
+
+  right: 590px;
+  bottom: 522px;
+
+  font-family: Lato;
+  font-weight: 300;
+  font-size: larger;
 }
 
 #link {
@@ -148,39 +199,6 @@ header {
 }
 
 /*------------------------------ addable classes ------------------------------*/
-
-.bookmark1 {
-  position: fixed;
-
-  right: 607px; /* #bookmark a 1th's right + 130px */
-  bottom: 622px; /* #bookmark a 1th's bottom + 12px */
-
-  font-family: Lato;
-  font-weight: 300;
-  font-size: larger;
-}
-
-.bookmark2 {
-  position: fixed;
-
-  right: 599px;
-  bottom: 572px;
-
-  font-family: Lato;
-  font-weight: 300;
-  font-size: larger;
-}
-
-.bookmark3 {
-  position: fixed;
-
-  right: 590px;
-  bottom: 522px;
-
-  font-family: Lato;
-  font-weight: 300;
-  font-size: larger;
-}
 
 .textBlue {
   color: rgb(44, 138, 244);
@@ -376,33 +394,39 @@ header {
   }
 
   .bookmark1 {
-    right: 190px; 
-    bottom: 420px; 
+    right: 150px; 
+    bottom: 365px; 
     font-size: small;
   }
   
   .bookmark2 {
-    right: 185px;
-    bottom: 387px;
+    right: 145px;
+    bottom: 335px;
     font-size: small;
   }
   
   .bookmark3 {
-    right: 180px;
-    bottom: 354px;
+    right: 140px;
+    bottom: 305px;
     font-size: small;
   }
 
   #desc1 {
-
+    right: 150px; 
+    bottom: 365px; 
+    font-size: small;
   }
   
   #desc2 {
-
+    right: 145px;
+    bottom: 335px;
+    font-size: small;
   }
   
   #desc3 {
-
+    right: 140px;
+    bottom: 305px;
+    font-size: small;
   }
 
   #greets {
@@ -453,16 +477,40 @@ header {
     bottom: 259px;
   }
 
-  #desc1 {
+  .bookmark1 {
+    right: 105px; 
+    bottom: 317px; 
+    font-size: smaller;
+  }
+  
+  .bookmark2 {
+    right: 100px;
+    bottom: 289px;
+    font-size: smaller;
+  }
+  
+  .bookmark3 {
+    right: 95px;
+    bottom: 261px;
+    font-size: smaller;
+  }
 
+  #desc1 {
+    right: 105px; 
+    bottom: 317px; 
+    font-size: smaller;
   }
   
   #desc2 {
-
+    right: 100px;
+    bottom: 289px;
+    font-size: smaller;
   }
   
   #desc3 {
-
+    right: 95px;
+    bottom: 261px;
+    font-size: smaller;
   }
 
   #link a, span {
@@ -509,16 +557,40 @@ header {
     bottom: 300px;
   }
 
-  #desc1 {
+  .bookmark1 {
+    right: 147px; 
+    bottom: 365px; 
+    font-size: smaller;
+  }
+  
+  .bookmark2 {
+    right: 142px;
+    bottom: 335px;
+    font-size: smaller;
+  }
+  
+  .bookmark3 {
+    right: 137px;
+    bottom: 305px;
+    font-size: smaller;
+  }
 
+  #desc1 {
+    right: 147px; 
+    bottom: 365px; 
+    font-size: smaller;
   }
   
   #desc2 {
-
+    right: 142px;
+    bottom: 335px;
+    font-size: smaller;
   }
   
   #desc3 {
-
+    right: 137px;
+    bottom: 305px;
+    font-size: smaller;
   }
 }
 
@@ -555,16 +627,40 @@ header {
     bottom: 160px;
   }
 
-  #desc1 {
+  .bookmark1 {
+    right: 120px; 
+    bottom: 211px; 
+    font-size: smaller;
+  }
+  
+  .bookmark2 {
+    right: 115px;
+    bottom: 186px;
+    font-size: smaller;
+  }
+  
+  .bookmark3 {
+    right: 110px;
+    bottom: 161px;
+    font-size: smaller;
+  }
 
+  #desc1 {
+    right: 120px; 
+    bottom: 211px; 
+    font-size: smaller;
   }
   
   #desc2 {
-
+    right: 115px;
+    bottom: 186px;
+    font-size: smaller;
   }
   
   #desc3 {
-
+    right: 110px;
+    bottom: 161px;
+    font-size: smaller;
   }
 
   #greets span {
