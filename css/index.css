@@ -225,6 +225,35 @@ header {
     bottom: 392px;
     font-size: medium;
   }
+
+  @media (hover: none) and (pointer: coarse) {
+
+    #bookmarks span {
+      visibility: hidden;
+    }
+
+    .mobiledesc {
+      visibility: visible;
+    }
+    
+    #desc1 {
+      right: 311px; 
+      bottom: 472px; 
+      font-size: medium;
+    }
+    
+    #desc2 {
+      right: 305px;
+      bottom: 432px;
+      font-size: medium;
+    }
+    
+    #desc3 {
+      right: 298px;
+      bottom: 392px;
+      font-size: medium;
+    }
+  }
 }
 
 @media ( max-width: 700px ) {
