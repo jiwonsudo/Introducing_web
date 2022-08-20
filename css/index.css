@@ -75,6 +75,21 @@ header {
   visibility: hidden;
 }
 
+#desc1 {
+  right: 477px;
+  bottom: 610px;
+}
+
+#desc2 {
+  right: 469px;
+  bottom: 560px;
+}
+
+#desc3 {
+  right: 460px;
+  bottom: 510px;
+}
+
 #link {
   bottom: 25px;
   left: 50%;
@@ -226,33 +241,22 @@ header {
     font-size: medium;
   }
 
-  @media (hover: none) and (pointer: coarse) {
-
-    #bookmarks span {
-      visibility: hidden;
-    }
-
-    .mobiledesc {
-      visibility: visible;
-    }
-    
-    #desc1 {
-      right: 311px; 
-      bottom: 472px; 
-      font-size: medium;
-    }
-    
-    #desc2 {
-      right: 305px;
-      bottom: 432px;
-      font-size: medium;
-    }
-    
-    #desc3 {
-      right: 298px;
-      bottom: 392px;
-      font-size: medium;
-    }
+  #desc1 {
+    right: 311px; 
+    bottom: 472px; 
+    font-size: medium;
+  }
+  
+  #desc2 {
+    right: 305px;
+    bottom: 432px;
+    font-size: medium;
+  }
+  
+  #desc3 {
+    right: 298px;
+    bottom: 392px;
+    font-size: medium;
   }
 }
 
@@ -305,6 +309,24 @@ header {
     font-size: small;
   }
 
+  #desc1 {
+    right: 190px;
+    bottom: 420px;
+    font-size: small;
+  }
+  
+  #desc2 {
+    right: 185px;
+    bottom: 387px;
+    font-size: small;
+  }
+  
+  #desc3 {
+    right: 180px;
+    bottom: 354px;
+    font-size: small;
+  }
+
   #greets span {
     font-size: 10pt;
   }
@@ -315,35 +337,6 @@ header {
 
   #copyright p {
     font-size: 7pt;
-  }
-
-  @media (hover: none) and (pointer: coarse) {
-
-    #bookmarks span {
-      visibility: hidden;
-    }
-
-    .mobiledesc {
-      visibility: visible;
-    }
-    
-    #desc1 {
-      right: 190px;
-      bottom: 420px;
-      font-size: small;
-    }
-    
-    #desc2 {
-      right: 185px;
-      bottom: 387px;
-      font-size: small;
-    }
-    
-    #desc3 {
-      right: 180px;
-      bottom: 354px;
-      font-size: small;
-    }
   }
 }
 
@@ -400,6 +393,18 @@ header {
     font-size: small;
   }
 
+  #desc1 {
+
+  }
+  
+  #desc2 {
+
+  }
+  
+  #desc3 {
+
+  }
+
   #greets {
     bottom: 50px;
   }
@@ -410,26 +415,6 @@ header {
 
   #link a, #link span {
     font-size: 9pt;
-  }
-
-  @media (hover: none) and (pointer: coarse) {
-
-    #bookmarks span {
-      visibility: hidden;
-    }
-
-    .mobiledesc {
-      visibility: visible;
-    }
-    
-    #desc1 {
-    }
-    
-    #desc2 {
-    }
-    
-    #desc3 {
-    }
   }
 }
 
@@ -468,32 +453,24 @@ header {
     bottom: 259px;
   }
 
+  #desc1 {
+
+  }
+  
+  #desc2 {
+
+  }
+  
+  #desc3 {
+
+  }
+
   #link a, span {
     font-size: 8pt;
   }
 
   #copyright p {
     font-size: 6pt;
-  }
-
-  @media (hover: none) and (pointer: coarse) {
-
-    #bookmarks span {
-      visibility: hidden;
-    }
-
-    .mobiledesc {
-      visibility: visible;
-    }
-    
-    #desc1 {
-    }
-    
-    #desc2 {
-    }
-    
-    #desc3 {
-    }
   }
 }
 
@@ -532,27 +509,16 @@ header {
     bottom: 300px;
   }
 
-  @media (hover: none) and (pointer: coarse) {
+  #desc1 {
 
-    #bookmarks span {
-      visibility: hidden;
-    }
+  }
+  
+  #desc2 {
 
-    .mobiledesc {
-      visibility: visible;
-    }
-    
-    #desc1 {
+  }
+  
+  #desc3 {
 
-    }
-    
-    #desc2 {
-
-    }
-    
-    #desc3 {
-
-    }
   }
 }
 
@@ -589,6 +555,18 @@ header {
     bottom: 160px;
   }
 
+  #desc1 {
+
+  }
+  
+  #desc2 {
+
+  }
+  
+  #desc3 {
+
+  }
+
   #greets span {
     font-size: 8pt;
   }
@@ -596,27 +574,15 @@ header {
   #link a, #link span {
     font-size: 9pt;
   }
+}
 
-  @media (hover: none) and (pointer: coarse) {
+@media (hover: none) and (pointer: coarse) {
 
-    #bookmarks span {
-      visibility: hidden;
-    }
+  #bookmarks span {
+    visibility: hidden;
+  }
 
-    .mobiledesc {
-      visibility: visible;
-    }
-    
-    #desc1 {
-
-    }
-    
-    #desc2 {
-
-    }
-    
-    #desc3 {
-
-    }
+  .mobiledesc {
+    visibility: visible;
   }
 }
