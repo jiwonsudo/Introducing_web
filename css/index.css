@@ -71,6 +71,10 @@ header {
   bottom: 510px;
 }
 
+.mobiledesc {
+  visibility: hidden;
+}
+
 #link {
   bottom: 25px;
   left: 50%;
@@ -129,10 +133,6 @@ header {
 }
 
 /*------------------------------ addable classes ------------------------------*/
-
-.hidden {
-  visibility: hidden;
-}
 
 .bookmark1 {
   position: fixed;
@@ -227,7 +227,7 @@ header {
   }
 }
 
-@media ( max-width: 700px) {
+@media ( max-width: 700px ) {
   #book img {
     width: 400px;
     right: -220px;
@@ -287,6 +287,35 @@ header {
   #copyright p {
     font-size: 7pt;
   }
+
+  @media (hover: none) and (pointer: coarse) {
+
+    #bookmarks span {
+      visibility: hidden;
+    }
+
+    .mobiledesc {
+      visibility: visible;
+    }
+    
+    #desc1 {
+      right: 190px;
+      bottom: 420px;
+      font-size: small;
+    }
+    
+    #desc2 {
+      right: 185px;
+      bottom: 387px;
+      font-size: small;
+    }
+    
+    #desc3 {
+      right: 180px;
+      bottom: 354px;
+      font-size: small;
+    }
+  }
 }
 
 @media ( max-width: 550px) {
@@ -335,6 +364,26 @@ header {
   #link a, #link span {
     font-size: 9pt;
   }
+
+  @media (hover: none) and (pointer: coarse) {
+
+    #bookmarks span {
+      visibility: hidden;
+    }
+
+    .mobiledesc {
+      visibility: visible;
+    }
+    
+    #desc1 {
+    }
+    
+    #desc2 {
+    }
+    
+    #desc3 {
+    }
+  }
 }
 
 @media ( max-width: 380px ) {
@@ -379,6 +428,26 @@ header {
   #copyright p {
     font-size: 6pt;
   }
+
+  @media (hover: none) and (pointer: coarse) {
+
+    #bookmarks span {
+      visibility: hidden;
+    }
+
+    .mobiledesc {
+      visibility: visible;
+    }
+    
+    #desc1 {
+    }
+    
+    #desc2 {
+    }
+    
+    #desc3 {
+    }
+  }
 }
 
 @media ( max-height: 700px ) {
@@ -414,6 +483,29 @@ header {
   #bookmarks a:nth-child(3) {
     right: 50px;
     bottom: 300px;
+  }
+
+  @media (hover: none) and (pointer: coarse) {
+
+    #bookmarks span {
+      visibility: hidden;
+    }
+
+    .mobiledesc {
+      visibility: visible;
+    }
+    
+    #desc1 {
+
+    }
+    
+    #desc2 {
+
+    }
+    
+    #desc3 {
+
+    }
   }
 }
 
@@ -456,5 +548,28 @@ header {
 
   #link a, #link span {
     font-size: 9pt;
+  }
+
+  @media (hover: none) and (pointer: coarse) {
+
+    #bookmarks span {
+      visibility: hidden;
+    }
+
+    .mobiledesc {
+      visibility: visible;
+    }
+    
+    #desc1 {
+
+    }
+    
+    #desc2 {
+
+    }
+    
+    #desc3 {
+
+    }
   }
 }
