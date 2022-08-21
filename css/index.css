@@ -681,4 +681,8 @@ header {
   .mobiledesc {
     visibility: visible;
   }
+
+  #link a {
+    color: #E75027;
+  }
 }
