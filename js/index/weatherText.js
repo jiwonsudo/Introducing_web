@@ -3,7 +3,7 @@ const weatherSpan = document.querySelector('#greets span:last-child');
 
 const icons = ['❤️', '🔥', '✨', '🌷', '🍀', '🍔', '🏝', '💎'];
 
-const API_KEY = '49988f4abe0b40d186e35d5b3bbe9525';
+const API_KEY; // set yours if in use
 const NIGHT_GREET = `It's a beautiful night!`;
 
 function onGeoOK(position) {
